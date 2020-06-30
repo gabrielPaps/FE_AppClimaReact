@@ -4,11 +4,13 @@
   "description": "App de React del clima usando Api",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cross-env NODE_ENV=production webpack -p",
+    "start": "webpack-dev-server --open"
   },
   "author": "Gabriel Caruso",
   "license": "ISC",
   "dependencies": {
+    "cross-env": "^7.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
